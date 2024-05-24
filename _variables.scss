@@ -1,0 +1,24 @@
+$font-family_heading: "Mulish", sans-serif;
+$font-family_normal: "Kanit", sans-serif;
+
+$accent-dark: #ff0a54;
+$accent-semi-dark: #ff5c8a;
+$accent-light: #fae0e4;
+
+$text-black-dark: #1f1f1f;
+$text-black-light: lighten($text-black-dark, 22);
+// $text-black-light: #6d7a8c;
+
+$one_column_layout_max: 768;
+
+// These values are the minimum and maximum viewport sizes to apply the font scaling
+$min_width: 400;
+$max_width: 1400;
+
+// These values are the minimum and maximum font sizes.
+$min_text_font_size: 16; // 16px
+$max_text_font_size: 18; // 18px
+
+/* =========== Section Padding =========== */
+$v_factor: calc(100 * (10 - 5) / ($max_width - $min_width));
+$sectionPadding: clamp(5rem, #{$v_factor}vw, 10rem);

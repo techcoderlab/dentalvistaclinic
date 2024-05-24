@@ -1,0 +1,69 @@
+form {
+  position: relative;
+  &.form-appointment {
+    width: 100%;
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 9px 15px 0 rgba($text-black-dark, 0.07);
+  }
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 25px;
+
+  .form-group {
+    label.control-label {
+      width: 100%;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: $accent-dark;
+      //   color: $text-black-dark;
+      //   margin: 10px 0;
+    }
+    input[type="submit"],
+    button[type="submit"] {
+      @media screen and (max-width: 767px) {
+        width: 100%;
+      }
+      margin-top: 1.15rem;
+      //   font-size: 1.1rem;
+    }
+    .control-field {
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 1.15rem;
+        border: none;
+        outline: none;
+        background: lighten($accent-light, 2);
+        border-radius: 5px;
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+          -webkit-box-shadow: 0 0 0 30px $accent-light inset !important;
+        }
+
+        // &::-moz-placeholder {
+        //   color: lighten($text-black-light, 10);
+        // }
+        // &::placeholder {
+        //   color: lighten($text-black-light, 10);
+        // }
+        &:focus,
+        &:active {
+          background: $accent-light;
+        }
+      }
+      textarea {
+        resize: none;
+        max-height: 150px;
+      }
+    }
+  }
+}

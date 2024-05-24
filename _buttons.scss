@@ -1,0 +1,58 @@
+.btn-group {
+  display: flex;
+  gap: 15px;
+  &.flex-space-column {
+    flex-direction: column;
+  }
+  &.flex-space-between {
+    justify-content: space-between;
+  }
+}
+/* buttons styling */
+.btn {
+  font-family: $font-family_normal;
+  // margin: 15px 0;
+  padding: 8px 20px;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  border-radius: 5px !important;
+  transition: all 0.5s ease;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+
+  &.btn-sm {
+    padding: 9px 15px;
+  }
+  &.btn-md {
+    font-size: 1.1rem;
+    padding: 12px 20px;
+  }
+  &.btn-rounded-circle {
+    border-radius: 5px !important;
+  }
+  &.btn-circle {
+    border-radius: 50px !important;
+  }
+
+  &.btn-accent {
+    background: $accent-dark;
+    color: $accent-light;
+    // border: 1px solid $accent-light;
+    &:hover {
+      background: $accent-semi-dark;
+    }
+  }
+  &.btn-black {
+    background: $text-black-dark;
+    color: $accent-light;
+    // border: 1px solid $accent-light;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}

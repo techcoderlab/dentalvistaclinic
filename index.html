@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dental Vista Clinic - Web Design</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="canonical" href="index.html" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header id="site-header" class="image-wrapper-parent">
+      <div class="image-wrapper">
+        <div class="overlay"></div>
+
+        <picture>
+          <source
+            type="image/avif"
+            srcset="
+              ./images/hero-section-image-600w.avif   600w,
+              ./images/hero-section-image-1200w.avif 1200w
+            "
+            sizes="(min-width: 992px) 1200px, 100%"
+          />
+
+          <!-- fallback to webp -->
+          <img
+            width="1200"
+            height="420"
+            src="./images/hero-section-image.webp"
+            alt="Dental checkup - Hero section background image"
+          />
+        </picture>
+      </div>
+      <nav class="navbar">
+        <div class="container">
+          <div class="brand site-logo">
+            <picture>
+              <source
+                type="image/avif"
+                srcset="
+                  ./images/logo-250w.avif 250w,
+                  ./images/logo-500w.avif 500w,
+                  ./images/logo-750w.avif 750w
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./images/logo-250w.webp 250w,
+                  ./images/logo-500w.webp 500w,
+                  ./images/logo-750w.webp 750w
+                "
+              />
+              <!-- fallback to webp -->
+              <img
+                class="remove-bg"
+                width="750"
+                height="750"
+                src="images/logo.png"
+                alt="Header - Branding"
+              />
+            </picture>
+          </div>
+          <div class="menu">
+            <div class="hamburger">
+              <div class="line line1"></div>
+              <div class="line line2"></div>
+              <div class="line line3"></div>
+            </div>
+            <ul class="menu-list main-navigation">
+              <li class="menu-item">
+                <a class="menu-link" href="#">Home</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#about">About Us</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#services">Services</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#cta-section">Free Checkup</a>
+              </li>
+
+              <li class="menu-item">
+                <a
+                  href="#cta-section"
+                  class="menu-link hover-decoration-none btn btn-sm btn-circle btn-black"
+                  >Get Appointment</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="header-hero_section section section--hero-py">
+        <div class="container">
+          <div class="hero-section_one">
+            <div class="hero-content">
+              <h1 class="hero-heading heading">We Brighten Your Smiles</h1>
+              <!-- <h2 class="hero-tagline">Smile Bright, Smile Confidently</h2> -->
+              <p class="hero-text">
+                The Dentalvista Wellness Clinic mission is to transform dental
+                visits into pleasant experiences, ensuring not only optimal oral
+                health but also genuine smiles. Grab your free dental Checkup
+                today!
+              </p>
+            </div>
+            <div class="hero-buttons btn-group">
+              <a
+                href="#cta-section"
+                class="hover-decoration-none btn btn-md btn-accent btn-rounded-circle"
+                >Get free checkup</a
+              >
+            </div>
+          </div>
+          <div class="hero-section_two"></div>
+        </div>
+      </section>
+    </header>
+    <main class="main" id="site-content">
+      <section class="feature-section section">
+        <div class="container">
+          <div class="features-wrapper grid">
+            <div class="feature--content">
+              <div class="flex flex--col flex--middle flex--gap-3">
+                <div class="icon-container">
+                  <i class="fa-regular fa-face-smile"></i>
+                </div>
+                <h2 class="feature-heading heading">Satisfaction Guarantee</h2>
+              </div>
+              <p class="feature-text">
+                Your smile, our promise - satisfaction assured every visit.
+              </p>
+            </div>
+            <div class="feature--content">
+              <div class="flex flex--col flex--middle flex--gap-3">
+                <div class="icon-container">
+                  <i class="fa-solid fa-tachograph-digital"></i>
+                </div>
+                <h2 class="feature-heading heading">Latest Technology</h2>
+              </div>
+              <p class="feature-text">
+                State-of-the-art tools for unparalleled dental care excellence.
+              </p>
+            </div>
+            <div class="feature--content">
+              <div class="flex flex--col flex--middle flex--gap-3">
+                <div class="icon-container">
+                  <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <h2 class="feature-heading heading">Professional Dentists</h2>
+              </div>
+
+              <p class="feature-text">
+                Skilled hands, compassionate hearts, your smile's guardians
+                always.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about-section section section--pb">
+        <div class="container">
+          <div class="about-section_one flex flex-col flex--gap-5">
+            <div class="about-content">
+              <span class="about-section-sub_heading sub-heading"
+                >Who we are</span
+              >
+              <h2 class="about-heading heading">
+                Best Dental Clinic That You Can Trust
+              </h2>
+              <!-- <h2 class="about-tagline">Smile Bright, Smile Confidently</h2> -->
+              <p class="about-text">
+                At Dentalvista Wellness Clinic, we believe in delivering
+                exceptional dental care with a personal touch. With years of
+                experience and a passion for oral health, our team is dedicated
+                to providing you and your family with the highest quality of
+                dental care in a comfortable and welcoming environment.
+              </p>
+            </div>
+            <div class="about-feature_container flex flex--col flex--gap-3">
+              <div class="flex flex--gap-3">
+                <div class="feature-one icon-container">
+                  <i class="fa-solid fa-hand-holding-dollar"></i>
+                </div>
+                <div class="flex flex--col">
+                  <h3 class="feature-heading heading">Affordable Prices</h3>
+                  <p class="feature-text">
+                    We offer reasonable pricing health care plans, insurance
+                    packages to clients.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-section_two">
+            <div class="image-container">
+              <picture class="lozad">
+                <source
+                  type="image/avif"
+                  srcset="
+                    ./images/dentist1-250w.avif   250w,
+                    ./images/dentist1-500w.avif   500w,
+                    ./images/dentist1-750w.avif   750w,
+                    ./images/dentist1-1000w.avif 1000w,
+                    ./images/dentist1-1250w.avif 1250w
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./images/dentist1-250w.webp   250w,
+                    ./images/dentist1-500w.webp   500w,
+                    ./images/dentist1-750w.webp   750w,
+                    ./images/dentist1-1000w.webp 1000w,
+                    ./images/dentist1-1250w.webp 1250w
+                  "
+                />
+                <!-- fallback to webp -->
+                <img
+                  width="750"
+                  height="750"
+                  src="images/dentist1.webp"
+                  alt="Dental checkup - About Section Image"
+                />
+              </picture>
+
+              <div class="box-one box"></div>
+              <div class="box-two box"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="services"
+        class="service-section section section section--py"
+      >
+        <div class="container">
+          <div class="service-section_one">
+            <div class="service-content">
+              <h2 class="service-heading heading">What Services We Offer</h2>
+              <!-- <h2 class="service-tagline">Smile Bright, Smile Confidently</h2> -->
+              <p class="service-text">
+                From routine cleanings to complex dental procedures, we offer a
+                wide range of services to meet all your dental needs.
+              </p>
+            </div>
+          </div>
+          <div class="service-section_two">
+            <section class="service-box_container grid">
+              <article class="service-box">
+                <div class="icon-container">
+                  <i class="fa-solid fa-tooth"></i>
+                </div>
+                <h3 class="service-box-heading heading">Dental Examination</h3>
+                <p class="service-box-text">
+                  Dive deep into your dental health with thorough, personalized
+                  check-ups.
+                </p>
+              </article>
+
+              <article class="service-box">
+                <div class="icon-container">
+                  <i class="fa-solid fa-syringe"></i>
+                </div>
+                <h3 class="service-box-heading heading">
+                  Restorative Dentistry
+                </h3>
+                <p class="service-box-text">
+                  Renew your smile's vitality through seamless repairs and
+                  functional enhancements.
+                </p>
+              </article>
+              <article class="service-box">
+                <div class="icon-container">
+                  <i class="fa-regular fa-face-smile"></i>
+                </div>
+                <h3 class="service-box-heading heading">
+                  Preventive Dentistry
+                </h3>
+                <p class="service-box-text">
+                  Safeguard your smile with proactive measures tailored to keep
+                  dental issues at bay.
+                </p>
+              </article>
+              <article class="service-box">
+                <div class="icon-container">
+                  <i class="fa-solid fa-teeth"></i>
+                </div>
+                <h3 class="service-box-heading heading">Cosmetic Dentistry</h3>
+                <p class="service-box-text">
+                  Enhance your natural beauty with personalized dental
+                  treatments crafted just for you.
+                </p>
+              </article>
+              <article class="service-box">
+                <div class="icon-container">
+                  <i class="fa-regular fa-face-grin-beam"></i>
+                </div>
+                <h3 class="service-box-heading heading">Oral Surgery</h3>
+                <p class="service-box-text">
+                  Trust our expertise for precise, compassionate care in
+                  addressing complex dental needs.
+                </p>
+              </article>
+              <article class="service-box">
+                <div class="icon-container">
+                  <i class="fa-solid fa-truck-medical"></i>
+                </div>
+                <h3 class="service-box-heading heading">
+                  Emergency Dental Care
+                </h3>
+                <p class="service-box-text">
+                  Quick relief and expert attention ensure your smile stays
+                  healthy through any dental crisis.
+                </p>
+              </article>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section id="cta-section" class="cta-section section section--py">
+        <div class="container grid">
+          <div class="cta-section_one">
+            <div class="cta-content">
+              <span class="cta-section-sub_heading sub-heading"
+                >Book Appointment</span
+              >
+              <h2 class="cta-heading heading">Get a free medical checkup</h2>
+              <p class="cta-text">
+                Receive a complimentary medical assessment today. Take the first
+                step towards a healthier you, at no cost.
+              </p>
+            </div>
+            <div
+              class="cta-social_media flex flex--col flex--middle flex--space flex--gap-2"
+            >
+              <h3 class="social_media_heading heading">Stay Connected On</h3>
+              <section class="flex flex--evenly flex--gap-3">
+                <div class="feature-section_content">
+                  <a href="#"
+                    ><div class="icon-container">
+                      <i class="fa-brands fa-facebook"></i></div
+                  ></a>
+                </div>
+                <div class="feature-section_content">
+                  <a href="#"
+                    ><div class="icon-container">
+                      <i class="fa-brands fa-instagram"></i></div
+                  ></a>
+                </div>
+                <div class="feature-section_content">
+                  <a href="#">
+                    <div class="icon-container">
+                      <i class="fa-brands fa-youtube"></i></div
+                  ></a>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="cta-section_two flex flex--middle flex--center">
+            <form class="form-appointment">
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="control-label" for="name">Name</label>
+                <div class="control-field">
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Your full name"
+                    class="form-control input-md"
+                    required=""
+                  />
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="control-label" for="email">Email</label>
+                <div class="control-field">
+                  <input
+                    id="email"
+                    name="email"
+                    type="text"
+                    placeholder="Your Email"
+                    class="form-control input-md"
+                    required=""
+                  />
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="control-label" for="phone-no">Phone No</label>
+                <div class="control-field">
+                  <input
+                    id="phone-no"
+                    name="phone-no"
+                    type="text"
+                    placeholder="Your  Phone No"
+                    class="form-control input-md"
+                  />
+                </div>
+              </div>
+
+              <!-- Button -->
+              <div class="form-group">
+                <label class="control-label" for="submit-btn"></label>
+                <div class="">
+                  <input
+                    id="submit-btn"
+                    name="submit-btn"
+                    type="submit"
+                    value="Get Appointment"
+                    class="btn btn-accent btn-rounded-circle btn-md"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="site-footer">
+      <div class="footer-content container grid">
+        <div>
+          <div class="brand site-logo" style="width: 310px; height: 90px">
+            <picture class="lozad">
+              <source
+                type="image/avif"
+                srcset="
+                  ./images/logo-footer-250w.avif 250w,
+                  ./images/logo-footer-500w.avif 500w,
+                  ./images/logo-footer-750w.avif 750w
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./images/logo-footer-250w.webp 250w,
+                  ./images/logo-footer-500w.webp 500w,
+                  ./images/logo-footer-750w.webp 750w
+                "
+              />
+
+              <img
+                src="./images/logo-footer-750w.webp 750w"
+                alt="Footer - Branding"
+              />
+
+              <!-- NO img element -->
+              <!-- instead of img element, there will be the last source with the minimum dimensions -->
+              <!-- for disabled JS you can set <noscript><img src="images/thumbs/04.jpg" alt=""></noscript> -->
+            </picture>
+          </div>
+        </div>
+        <ul class="footer-navigation style-none flex flex--col">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Services</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <ul class="footer-contact-navigation style-none flex flex--col">
+          <li><i class="fa-solid fa-globe"></i>&nbsp;info@dentalvista.com</li>
+          <li><i class="fa-solid fa-phone"></i>&nbsp;13245667832</li>
+          <li>
+            <i class="fa-solid fa-map-pin"></i>&nbsp; 101 South Jackson Ave
+            #100, San Jose, CA 20115
+          </li>
+        </ul>
+      </div>
+      <p class="copyright-text">Copyright © 2024 Dentalvista Wellness.</p>
+    </footer>
+    <!-- ================== 3rd Party JS ================== -->
+    <script src="assets/js/modules/lozad.min.js"></script>
+
+    <!-- ================== Main Script ================== -->
+    <script src="script.js" type="module"></script>
+  </body>
+</html>

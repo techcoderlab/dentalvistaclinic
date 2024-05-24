@@ -1,0 +1,48 @@
+@mixin add-background() {
+  background: repeating-linear-gradient(
+    45deg,
+    $accent-light 0,
+    $accent-light 1px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 32px 32px;
+}
+
+// sets relative font-sizing and alignment (in _sizing)
+@mixin adjustable-font-size(
+  $min_text_size,
+  $max_text_size,
+  $min_width: 400,
+  $max_width: 1400
+) {
+  // Calculate the factor for fluid scaling (v)
+  $v_factor: calc(
+    100 * ($max_text_size - $min_text_size) / ($max_width - $min_width)
+  );
+
+  /* Calculate r */
+  $r: calc(
+    (($min_width * $max_text_size) - ($max_width * $min_text_size)) /
+      ($min_width - $max_width)
+  );
+
+  // Use the factor (v) to define the fluid font size
+  font-size: clamp(
+    pxToRem($min_text_size),
+    #{$v_factor}vw + pxToRem($r),
+    pxToRem($max_text_size)
+  );
+}
+
+@mixin flex($justify-content: start, $align-items: start) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+
+  // IE10 has a different default value: https://goo.gl/QQz4Xy
+  > * {
+    flex: 0 1 auto;
+    max-width: 100%;
+  }
+}

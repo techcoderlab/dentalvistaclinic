@@ -1,0 +1,92 @@
+.heading {
+  font-family: $font-family_heading;
+  color: $text-black-dark;
+  letter-spacing: 0.03rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+.sub-heading {
+  font-family: $font-family_heading;
+  text-transform: uppercase;
+  color: $accent-dark;
+  letter-spacing: 0.05rem;
+  font-weight: 900;
+  font-size: 0.88rem;
+  // margin-bottom: 1rem;
+}
+h1.heading {
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+h2.heading {
+  font-weight: 800;
+  // margin-bottom: 1rem;
+}
+h3.heading {
+  font-weight: 700;
+  // margin-bottom: 0.28rem;
+}
+
+h1 {
+  font-size: 28px; /* 1.802rem * 16px = 28.832px, rounded down to 28px */
+}
+h2 {
+  font-size: 25px; /* 1.602rem * 16px = 25.632px, rounded down to 25px */
+}
+h3 {
+  font-size: 22px; /* 1.424rem * 16px = 22.784px, rounded down to 22px */
+}
+h4 {
+  font-size: 20px; /* 1.266rem * 16px = 20.256px, rounded down to 20px */
+}
+h5 {
+  font-size: 18px; /* 1.125rem * 16px = 18px */
+}
+
+:root {
+  font-size: pxToRem($min_text_font_size);
+  // @include adjustable-font-size($min_text_font_size, $max_text_font_size);
+}
+
+@media (min-width: #{$min_width}px) and (max-width: #{$max_width}px) {
+  :root {
+    @include adjustable-font-size($min_text_font_size, $max_text_font_size);
+  }
+  h1 {
+    @include adjustable-font-size(28, 40);
+  }
+  h2 {
+    @include adjustable-font-size(25, 33);
+  }
+  h3 {
+    @include adjustable-font-size(22, 28);
+  }
+  h4 {
+    @include adjustable-font-size(20, 23);
+  }
+  h5 {
+    @include adjustable-font-size(18, 19);
+  }
+}
+
+@media (min-width: #{$max_width}px) {
+  :root {
+    font-size: pxToRem($max_text_font_size);
+  }
+  h1 {
+    font-size: 40px; /* 2.488rem * 16px = 39.808px, rounded up to 40px */
+  }
+  h2 {
+    font-size: 33px; /* 2.074rem * 16px = 33.184px, rounded down to 33px */
+  }
+  h3 {
+    font-size: 28px; /* 1.728rem * 16px = 27.648px, rounded down to 28px */
+  }
+  h4 {
+    font-size: 23px; /* 1.44rem * 16px = 23.04px, rounded down to 23px */
+  }
+  h5 {
+    font-size: 19px; /* 1.2rem * 16px = 19.2px, rounded down to 19px */
+  }
+}
